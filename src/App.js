@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import UseStateObject from "./component/UseStateObject";
+import ArrayUsestate from "./component/ArrayUsestate";
+import ButtonToggle from "./component/ButtonToggle"
+import ShortCircuitEvaluation from "./component/ShortCircuitEvaluation";
+import BasicForm from "./component/BasicForm";
+import UseEffect from "./component/UseEffect";
+// import CleanupFunction from "./component/CleanupFunction";
+import  UseReducer from "./component/UseReducer";
+const App = () => {
+    return(
+        <>
+            <ButtonToggle/>
+            <ArrayUsestate/>
+            <UseStateObject/>
+            <ShortCircuitEvaluation/>
+            <BasicForm/>
+            <UseEffect/>
+            {/* <CleanupFunction/> */}
+            <UseReducer/>
+            
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        
+        </>
+    )
+
 }
-
 export default App;
